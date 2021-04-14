@@ -111,6 +111,8 @@ section.registration .offer:hover {
    background-image: url(../images/icon-error.svg);
    background-repeat: no-repeat;
    background-position: 90% 50%;
+   color: var(--primary-red);
+   font-weight: 600;
 }
 
 .input__container input[type="text"] {
