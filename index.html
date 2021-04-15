@@ -29,21 +29,22 @@
       <h2>
         <a href="#fname" class="offer">Try it free 7 days <span>then $20/mo. thereafter</span></a>
       </h2>
-      <form action="submit" class="registration__form">
+      <form action="submit" class="registration__form" novalidate>
+        <span class="success__span"></span>
         <div class="input__container">
-          <input type="text" id="fname" class="fname" name="fname" placeholder="first name" required>
+          <input type="text" id="fname" class="fname" name="fname" placeholder="first name" >
           <span></span>
         </div>
         <div class="input__container">
-          <input type="text" id="lname" class="lname" name="lname" placeholder="last name" required>
+          <input type="text" id="lname" class="lname" name="lname" placeholder="last name" >
           <span></span>
         </div>
         <div class="input__container">
-          <input type="email" id="email" class="email" name="email" placeholder="email address" required>
+          <input type="email" id="email" class="email" name="email" placeholder="email address" >
           <span></span>
         </div>
         <div class="input__container">
-          <input type="password" id="password" class="password" name="password" placeholder="password" required>
+          <input type="password" id="password" class="password" name="password" placeholder="password" >
           <span></span>
         </div>
         <button name="submit" class="submit" id="submit">claim your free trial</button>

@@ -92,6 +92,19 @@ section.registration .offer:hover {
       formAnimation 1s 4s;
 }
 
+.registration__form .success {
+   display: block;
+   background-color: var(--primary-green);
+   width: 100%;
+   margin-bottom: 1rem;
+   border-radius: .7rem;
+   text-align: left;
+   padding: .5rem 1.25rem;
+   color: #fff;
+   box-shadow: 0px 1px 1px 1px hsl(154deg 43% 48%);
+   font-weight: 500;
+}
+
 .input__container {
    margin: 0 0 1rem 0;
    padding: 0;
@@ -239,7 +252,7 @@ footer a:hover {
 
 /* media queries  */
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 750px) {
    body {
       height: 100vh;
    }
@@ -305,6 +318,11 @@ footer a:hover {
 
    .input__container input {
       text-align: left;
+   }
+
+   footer {
+      margin: 0 auto 0 5vw;
+      letter-spacing: .1rem;
    }
 
    @keyframes headerH1 {
