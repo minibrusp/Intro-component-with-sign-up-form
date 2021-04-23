@@ -144,8 +144,7 @@
       }
 
       addAccountError(target) {
-         let errorMsg = document.querySelector(`.registration__form .${target} + span`);
-         errorMsg.classList.add('error');
+         super.addPersonError(target);
 
          switch(target) {
             case 'email':
@@ -207,7 +206,7 @@
    regForm.addEventListener('submit', event => {
       event.preventDefault();
       let account = new Account();
-      console.log(`${account.accountInfo()}`);
+      // console.log(`${account.accountInfo()}`);
 
    });
 
