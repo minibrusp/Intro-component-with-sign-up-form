@@ -144,7 +144,8 @@
       }
 
       addAccountError(target) {
-         super.addPersonError(target);
+         let errorMsg = document.querySelector(`.registration__form .${target} + span`);
+         errorMsg.classList.add('error');
 
          switch(target) {
             case 'email':
@@ -170,7 +171,7 @@
       }
 
       passwordRegexValidation(password) {
-         let pattern = /^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*\d{3,})(?=.*[!#@$%&? "]).*$/;
+         let pattern = /^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*\d){3,}(?=.*[!#@$%&? "]).*$/;
          let result = pattern.test(password);
          return result;
       }
