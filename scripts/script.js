@@ -171,7 +171,7 @@
       }
 
       passwordRegexValidation(password) {
-         let pattern = /^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*\d){3,}(?=.*[!#@$%&? "]).*$/;
+         let pattern = /^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*\d)(?=.*[!#@$%&? "]).*$/;
          let result = pattern.test(password);
          return result;
       }
@@ -179,7 +179,7 @@
       invalidPassword() {
          let errorMsg = document.querySelector(`.registration__form .password + span`);
          errorMsg.classList.add('error');
-         errorMsg.innerHTML = "Password must contain atleast 8 characters </br>1 capital letter 1 </br>special character </br>and atleast 3 numbers";
+         errorMsg.innerHTML = "Password must contain atleast 8 characters </br>1 capital letter 1 </br>special character </br>and atleast 1 number";
          return;
       }
 
